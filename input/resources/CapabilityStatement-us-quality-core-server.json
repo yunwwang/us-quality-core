@@ -1507,6 +1507,23 @@
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "do-not-perform"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
             }
           ],
           "type": "MedicationRequest",
@@ -1636,6 +1653,23 @@
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "status"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
             }
           ],
           "type": "Observation",
@@ -1693,6 +1727,18 @@
               "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-category",
               "type": "token",
               "documentation": "The client **MAY** provide a category."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "status",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-observation-status",
+              "type": "token",
+              "documentation": "The client **MAY** provide a status."
             },
             {
               "extension": [
@@ -2128,6 +2174,23 @@
                 {
                   "url": "required",
                   "valueString": "code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "do-not-perform"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
