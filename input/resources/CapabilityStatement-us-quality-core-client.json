@@ -619,6 +619,23 @@
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                },
+                {
+                  "url": "required",
+                  "valueString": "patient"
+                },
+                {
+                  "url": "required",
+                  "valueString": "do-not-perform"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
             }
           ],
           "type": "DeviceRequest",
@@ -673,6 +690,18 @@
               "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-devicerequest-code",
               "type": "token",
               "documentation": "The client **MAY** provide a code value."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "do-not-perform",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-devicerequest-do-not-perform",
+              "type": "token",
+              "documentation": "The client **MAY** provide a token value."
             }
           ]
         },
@@ -1532,6 +1561,18 @@
               "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationrequest-intent",
               "type": "token",
               "documentation": "The client **MAY** provide a token value."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "do-not-perform",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-medicationrequest-do-not-perform",
+              "type": "token",
+              "documentation": "The client **MAY** provide a token value."
             }
           ]
         },
@@ -2180,6 +2221,18 @@
               "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-authored",
               "type": "date",
               "documentation": "The client **MAY** provide a date value."
+            },
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "MAY"
+                }
+              ],
+              "name": "do-not-perform",
+              "definition": "http://fhir.org/guides/onc/us-quality-core/SearchParameter/us-quality-core-servicerequest-do-not-perform",
+              "type": "token",
+              "documentation": "The client **MAY** provide a token value."
             }
           ]
         },
